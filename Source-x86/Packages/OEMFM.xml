@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+    <BasePackages/>
+    <Features>
+        <OEM>
+            <!-- Feature definitions below -->            
+            <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTCoreDefaultApp.cab">
+                <FeatureIDs>
+                    <FeatureID>OEM_IoTCoreDefaultApp</FeatureID>
+                </FeatureIDs>
+            </PackageFile>
+            <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.IoTOnboardingTask.cab">
+                <FeatureIDs>
+                    <FeatureID>OEM_IoTOnboardingTask</FeatureID>
+                </FeatureIDs>
+            </PackageFile>  
+            <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Appx.KiloSep.cab">
+                <FeatureIDs>
+                    <FeatureID>OEM_KiloSep</FeatureID>
+                </FeatureIDs>
+            </PackageFile>
+            <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Drivers.WifiNice50c_2.cab">
+                <FeatureIDs>
+                    <FeatureID>OEM_DriverWifi</FeatureID>
+                </FeatureIDs>
+            </PackageFile>
+            
+        </OEM>
+        <OEMFeatureGroups/>
+    </Features>
+</FeatureManifest>
